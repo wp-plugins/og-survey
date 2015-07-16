@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: JeetB89
+Contributors: ogmaconceptions
 Tags: WooCommerce
 Requires at least: 3.0.1
 Tested up to: 4.2.2
@@ -29,9 +29,10 @@ Site Admin can add one or more Questions & Sub-Questions. Sub-Questions can be l
 == Features ==
 
 * Two Custom Post Types: question, sub-question
-* Two Shortcodes: [questions ids="<question ids comma separated>"], [og-survey-result]
+* Two Shortcodes: [questions ids="question-ids-comma-separated"], [og-survey-result]
 * WordPress Settings API for the Settings page
 * Custom CSS, JS for styling the Survey Content pages and Survey Resultant page
+* Webshim Library
 
 == How To Use ==
 
