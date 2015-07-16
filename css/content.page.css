@@ -1,0 +1,20 @@
+/*This CSS Should Be Applied for the Question & Answer Content Page Only*/
+
+.og-survey-form-error {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+#og-survey-question-progress {
+  display: inline-block;
+}
+
+#og-survey-question-progress li {
+  list-style: none;
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+#og-survey-question-progress li img {
+  vertical-align: middle;
+}

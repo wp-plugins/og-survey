@@ -1,0 +1,29 @@
+/*OG Survey Admin Styles*/
+
+#adminmenu .wp-menu-image img {
+  height: 17px !important;
+  width: 17px !important;
+}
+
+.og-survey-metabox-ul li {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.others-part {
+  margin: 10px 0;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.others-part table tbody tr td {
+  font-size: 14px;
+}
+
+.others-part h3 {
+  padding: 0 0 10px !important;
+}
+
+.add-remove-button-part {
+  margin: 10px 0 0;
+}
