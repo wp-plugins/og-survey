@@ -18,8 +18,8 @@ function og_survey_question_answer_content_shortcode( $atts ) {
     <?php if( !empty( $all_questions ) && !empty( $options['resultant_page'] ) ) : ?>
       <?php if( !isset( $_REQUEST['terms-conditions-accepted'] ) && ( empty( $_REQUEST['terms-conditions-accepted'] ) || ( $_REQUEST['terms-conditions-accepted'] != 'true' ) ) ) : ?>
         <form id="og-survey-accept-form" class="ws-validate" method="post" action="">
-          <p><input type="checkbox" name="terms-conditions-accepted" value="true" required /> <?php echo $options['terms_conditions_text_a']; ?> <a href="<?php if( !empty( $options['terms_conditions_page'] ) ) echo get_page_link( get_page_by_title( $options['terms_conditions_page'] )->ID ); else echo '#'; ?>" target="_blank"><?php echo $options['terms_conditions_text_linked']; ?></a> <?php echo $options['terms_conditions_text_b']; ?></p>
-          <p><input type="submit" id="og-survey-accept-form-submit" value="Start" /></p>
+          <p><input type="checkbox" name="terms-conditions-accepted" value="true" required /> I agree to the <a href="<?php if( !empty( $options['terms_conditions_page'] ) ) echo get_page_link( get_page_by_title( $options['terms_conditions_page'] )->ID ); else echo '#'; ?>" target="_blank">Terms and Conditions</a> prior to using this Survey.</p>
+          <p><input type="submit" id="og-survey-accept-form-submit" value="Build My Personalized Plan" /></p>
         </form>
       <?php endif; ?>
 
