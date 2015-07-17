@@ -26,6 +26,7 @@ function og_survey_settings_init() {
   add_settings_field( 'og_survey_result_extra_css', __( 'Extra Resultant Page CSS', 'og-survey' ), 'og_survey_result_extra_css_render', 'pluginPageMain', 'og_survey_pluginPageMain_section' );
   add_settings_field( 'og_survey_result_extra_js', __( 'Extra Resultant Page Scripts', 'og-survey' ), 'og_survey_result_extra_js_render', 'pluginPageMain', 'og_survey_pluginPageMain_section' );
   add_settings_field( 'og_survey_terms_conditions_page', __( 'Terms & Conditions Page', 'og-survey' ), 'og_survey_terms_conditions_page_render', 'pluginPageMain', 'og_survey_pluginPageMain_section' );
+  add_settings_field( 'og_survey_terms_conditions_text', __( 'Terms & Conditions Text', 'og-survey' ), 'og_survey_terms_conditions_text_render', 'pluginPageMain', 'og_survey_pluginPageMain_section' );
   
   // Setting Fields of Shortcode Tab Section
   add_settings_field( 'og_survey_multiple_survey_shortcode_generate', __( 'Survey Shortcodes', 'og-survey' ), 'og_survey_multiple_survey_shortcode_generate_render', 'pluginPageShortcode', 'og_survey_pluginPageShortcode_section' );
@@ -95,6 +96,13 @@ function og_survey_terms_conditions_page_render() {
     <?php endforeach; ?>
   </select>
   <p class="description">Select a Page from the above list, or Add a Page by <a href="<?php echo admin_url( 'post-new.php?post_type=page' ); ?>">Clicking Here</a>, which will be linked to Terms & Conditions on the Survey page(s).</p>
+  <?php
+}
+
+function og_survey_terms_conditions_text_render() {
+  $options = get_option( 'og_survey_settings' ); ?>
+  <input type="text" name="og_survey_settings[terms_conditions_text_a]" value="<?php echo $options['terms_conditions_text_a']; ?>" /> | <input type="text" name="og_survey_settings[terms_conditions_text_linked]" value="<?php echo $options['terms_conditions_text_linked']; ?>" /> | <input type="text" name="og_survey_settings[terms_conditions_text_b]" value="<?php echo $options['terms_conditions_text_b']; ?>" />
+  <p class="description">The three inputs above should be merged together to make a complete Terms & Conditions text. The second field's text should be Linked to the Terms & Conditions page.</p>
   <?php
 }
 
