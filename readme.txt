@@ -29,7 +29,7 @@ Site Admin can add one or more Questions & Sub-Questions. Sub-Questions can be l
 == Features ==
 
 * Two Custom Post Types: question, sub-question
-* Two Shortcodes: [questions ids="question-ids-comma-separated"], [og-survey-result]
+* Two Shortcodes: [questions ids="question ids comma separated"], [og-survey-result]
 * WordPress Settings API for the Settings page
 * Custom CSS, JS for styling the Survey Content pages and Survey Resultant page
 * Webshim Library for validation things

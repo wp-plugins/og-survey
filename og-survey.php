@@ -3,7 +3,7 @@
  * Plugin Name: OG Survey
  * Plugin URI: http://www.ogmaconceptions.com/
  * Description: A simple WooCommerce extension which creates a Survey Management and as a result after the survey, some WooCommerce products or any other contents via shortcode or one or more YouTube videos would be recommended. WooCommerce plugin must be activated to work with this plugin.
- * Version: 1.0.0
+ * Version: 1.0
  * Author: Team OGMA
  * Author URI: http://www.ogmaconceptions.com/
  * License: GPLv2 or later
