@@ -110,7 +110,7 @@ if( ! function_exists( 'og_question_answer_metabox' ) && ! function_exists( 'og_
             <?php endif; ?>
           </div>
           <div class="others-part relprod other" <?php if( empty( $val['recommend_other'] ) ) : ?>style="display: none;"<?php endif; ?>>
-            <input type="text" class="widefat checkvalidshortcodeyoutubeurl" name="question[recommend_other][]" value='<?php echo $val['recommend_other']; ?>' placeholder="Enter Shortcode for Non-WooCommerce Products or Files or Videos OR Enter a YouTube URL.." />
+            <input type="text" class="widefat checkvalidshortcodeyoutubeurl" name="question[recommend_other][]" value="<?php echo $val['recommend_other']; ?>" placeholder="Enter Shortcode for Non-WooCommerce Products or Files or Videos OR Enter a YouTube URL.." />
           </div>
           <div class="others-part relprod whyrecommend" <?php if( !empty( $val['sub_question_id'] ) ) : ?>style="display: none;"<?php endif; ?>>
             <textarea class="widefat" name="question[why_recommend_this][]" rows="5" placeholder="Why You Recommend This.."><?php echo $val['why_recommend_this']; ?></textarea>
