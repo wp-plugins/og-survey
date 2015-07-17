@@ -1,0 +1,13 @@
+/*Resultant Page CSS*/
+
+div.og-survey-result {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+div.og-survey-result:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
