@@ -50,6 +50,3 @@ Site Admin can add one or more Questions & Sub-Questions. Sub-Questions can be l
 
 = 1.0.0 =
 * First stable release.
-
-= 1.0.1 =
-* Fixed some minor bugs.
